@@ -1,4 +1,5 @@
-import React from 'react';
+import { Menu, X } from 'lucide-react';
+import React, { useState } from 'react';
 
 const navItems = [
     { id: 1, name: "Home", path: "/" },
@@ -11,16 +12,29 @@ const navItems = [
 
 
 const NavBar = () => {
+    const [shawIcon, setShawIcon] = useState(true)
+    const navOption = navItems.map((nav) =>
+        <li key={nav.id} className='ml-5'><a href={nav.path}>{nav.name}</a></li>
+    )
+
     return (
-        <nav className='flex justify-between mx-10 items-center my-3'>
-            <h1>Logo</h1>
-            <ul className='flex'>
+        <nav className='flex justify-between mx-4 md:mx-10 my-3 items-start'>
+            <span className='flex gap-2'>
                 {
-                    navItems.map((nav) => {
-                        return (
-                            <li className='ml-5'><a href={nav.path}>{nav.name}</a></li>
-                        )
-                    })
+                    shawIcon ?
+                        <X className='md:hidden' onClick={() => setShawIcon(!shawIcon)}></X> :
+                        <Menu className='md:hidden' onClick={() => setShawIcon(!shawIcon)}></Menu>
+                }
+                <ul className={`md:hidden absolute bg-green-500 duration-1000 ${shawIcon ? "top-10" : "-top-40"}`}>
+                    {
+                        navOption
+                    }
+                </ul>
+                <h1>Logo</h1>
+            </span>
+            <ul className='hidden md:flex'>
+                {
+                    navOption
                 }
             </ul>
             <button>SignUp</button>
