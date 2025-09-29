@@ -12,13 +12,13 @@ const navItems = [
 
 
 const NavBar = () => {
-    const [shawIcon, setShawIcon] = useState(true)
+    const [shawIcon, setShawIcon] = useState(false)
     const navOption = navItems.map((nav) =>
         <li key={nav.id} className='ml-5'><a href={nav.path}>{nav.name}</a></li>
     )
 
     return (
-        <nav className='flex justify-between mx-4 md:mx-10 my-3 items-start'>
+        <nav className='flex justify-between mx-4 md:mx-10 mt-5 items-start'>
             <span className='flex gap-2'>
                 {
                     shawIcon ?

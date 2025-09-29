@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "package_name": "Basic Plan",
+    "features": [
+      "Access to gym equipment",
+      "Locker facility",
+      "1 Free fitness assessment"
+    ],
+    "description": "Perfect for beginners who want access to essential gym facilities with basic support.",
+    "price": 29.99
+  },
+  {
+    "id": 2,
+    "package_name": "Standard Plan",
+    "features": [
+      "Access to gym equipment",
+      "Locker + shower facility",
+      "2 Group fitness classes per week",
+      "Free Wi-Fi"
+    ],
+    "description": "Ideal for regular gym-goers who want group classes and a more comfortable gym experience.",
+    "price": 49.99
+  },
+  {
+    "id": 3,
+    "package_name": "Premium Plan",
+    "features": [
+      "Unlimited gym access",
+      "Locker + shower facility",
+      "Unlimited group fitness classes",
+      "Nutrition consultation (monthly)",
+      "Access to yoga and Zumba sessions"
+    ],
+    "description": "For fitness enthusiasts who want unlimited classes, consultations, and premium facilities.",
+    "price": 79.99
+  },
+  {
+    "id": 4,
+    "package_name": "VIP Plan",
+    "features": [
+      "24/7 gym access",
+      "Dedicated personal trainer",
+      "Customized diet plan",
+      "Spa & sauna access",
+      "Priority booking for classes"
+    ],
+    "description": "Exclusive plan with personal training, diet support, and luxury wellness facilities.",
+    "price": 149.99
+  }
+]
